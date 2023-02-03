@@ -1,0 +1,128 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 1073741824 bytes for Failed to commit area from 0x00000000c0000000 to 0x0000000100000000 of length 1073741824.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3440), pid=36528, tid=0x0000000000004ba0
+#
+# JRE version:  (8.0_265-b01) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.265-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001b4c047e000):  JavaThread "Unknown thread" [_thread_in_vm, id=19360, stack(0x0000001e1f300000,0x0000001e1f400000)]
+
+Stack: [0x0000001e1f300000,0x0000001e1f400000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000001b4c047e000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=19360, stack(0x0000001e1f300000,0x0000001e1f400000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000001b4c047dce0] Heap_lock - owner thread: 0x000001b4c047e000
+
+heap address: 0x00000000c0000000, size: 1024 MB, Compressed Oops mode: Non-zero based:0x00000000bffff000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff660da0000 - 0x00007ff660de7000 	C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe
+0x00007ffbed160000 - 0x00007ffbed350000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffbeb340000 - 0x00007ffbeb3f2000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffbea330000 - 0x00007ffbea5d5000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffbecec0000 - 0x00007ffbecf63000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffbeb400000 - 0x00007ffbeb49e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffbeb620000 - 0x00007ffbeb6b7000 	C:\Windows\System32\sechost.dll
+0x00007ffbeb500000 - 0x00007ffbeb61f000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffbebd50000 - 0x00007ffbebee4000 	C:\Windows\System32\USER32.dll
+0x00007ffbeb0a0000 - 0x00007ffbeb0c1000 	C:\Windows\System32\win32u.dll
+0x00007ffbebfe0000 - 0x00007ffbec006000 	C:\Windows\System32\GDI32.dll
+0x00007ffbea190000 - 0x00007ffbea328000 	C:\Windows\System32\gdi32full.dll
+0x00007ffbea6e0000 - 0x00007ffbea77e000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffbea5e0000 - 0x00007ffbea6da000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffbd5000000 - 0x00007ffbd5284000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.1379_none_9e7ff3b3e45cc0c4\COMCTL32.dll
+0x00007ffbeba10000 - 0x00007ffbebd47000 	C:\Windows\System32\combase.dll
+0x00007ffbeb130000 - 0x00007ffbeb1b1000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffbeb880000 - 0x00007ffbeb8ae000 	C:\Windows\System32\IMM32.DLL
+0x0000000054e00000 - 0x0000000055726000 	C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.265-3\jre\bin\server\jvm.dll
+0x00007ffbeb740000 - 0x00007ffbeb748000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffbe6990000 - 0x00007ffbe69b4000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffbdc2d0000 - 0x00007ffbdc2d9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffbd8a30000 - 0x00007ffbd8a3a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x0000000054d20000 - 0x0000000054df2000 	C:\Windows\SYSTEM32\MSVCR100.dll
+0x00007ffbebf00000 - 0x00007ffbebf6f000 	C:\Windows\System32\WS2_32.dll
+0x00007ffbe6960000 - 0x00007ffbe698d000 	C:\Windows\SYSTEM32\winmmbase.dll
+0x00007ffbeb1c0000 - 0x00007ffbeb20a000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ffbea020000 - 0x00007ffbea031000 	C:\Windows\System32\kernel.appcore.dll
+0x00007ffbdbd90000 - 0x00007ffbdbd9f000 	C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.265-3\jre\bin\verify.dll
+0x00007ffbcfba0000 - 0x00007ffbcfbc9000 	C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.265-3\jre\bin\java.dll
+0x00007ffbd32c0000 - 0x00007ffbd32d6000 	C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.265-3\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -XX:+HeapDumpOnOutOfMemoryError -Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:G1ReservePercent=20 -Djava.security.egd=file:/dev/urandom -Duser.language=en -Duser.region=EN 
+java_command: ApacheJMeter.jar
+java_class_path (initial): ApacheJMeter.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\java-11-openjdk-11.0.8.10-2.windows.redhat.x86_64
+CLASSPATH=.;C:\Program Files\java-11-openjdk-11.0.8.10-2.windows.redhat.x86_64\lib\dt.jar;C:\Program Files\java-11-openjdk-11.0.8.10-2.windows.redhat.x86_64\lib\tools.jar;D:\apache-jmeter-5.4\lib\ext\ApacheJMeter_core.jar;D:\apache-jmeter-5.4\lib\jorphan.jar
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\HP\LoadRunner\strawberry-perl\perl\bin;C:\Program Files\PuTTY\;"C:\Program Files\java-11-openjdk-11.0.8.10-2.windows.redhat.x86_64\bin;C:\Program Files\java-11-openjdk-11.0.8.10-2.windows.redhat.x86_64\jre\bin";C:\Program Files\Python38;C:\Program Files\Python38\Scripts;D:\apache-jmeter-5.4\bin;C:\Users\Winston Qin\AppData\Roaming\Python\Python38\Scripts;D:\program files\gradle-6.8-all\gradle-6.8\bin;C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;;C:\Program Files\Microsoft VS Code\bin;C:\Users\Winston Qin\AppData\Local\Microsoft\WindowsApps;C:\Users\Winston Qin\.dotnet\tools;C:\Program Files\JetBrains\PyCharm 2019.3.1\bin;;C:\Users\Winston Qin\AppData\Local\Programs\Fiddler;D:\program files\PyCharm 2020.1.3\bin;;D:\program files\IntelliJ IDEA Community Edition 2020.3.1\bin;
+USERNAME=Winston Qin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 18362 (10.0.18362.1350)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 142 stepping 12, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 7972796k(730792k free), swap 23418824k(320208k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.265-b01) for windows-amd64 JRE (1.8.0_265-b01), built on Aug  5 2020 06:56:30 by "build" with MS VC++ 10.0 (VS2010)
+
+time: Thu Mar 18 17:24:45 2021
+timezone: 中国标准时间
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

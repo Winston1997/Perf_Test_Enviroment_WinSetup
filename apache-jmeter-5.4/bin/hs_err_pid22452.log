@@ -1,0 +1,145 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 1073741824 bytes for Failed to commit area from 0x00000000c0000000 to 0x0000000100000000 of length 1073741824.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3377), pid=22452, tid=0x0000000000002ef8
+#
+# JRE version:  (8.0_271-b09) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.271-b09 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001f3e1f34800):  JavaThread "Unknown thread" [_thread_in_vm, id=12024, stack(0x000000cc94600000,0x000000cc94700000)]
+
+Stack: [0x000000cc94600000,0x000000cc94700000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x33f6c9]
+V  [jvm.dll+0x286122]
+V  [jvm.dll+0x286dcd]
+V  [jvm.dll+0x27d805]
+V  [jvm.dll+0x2a40ee]
+V  [jvm.dll+0x2259a5]
+V  [jvm.dll+0x3c0c07]
+V  [jvm.dll+0x3c09e9]
+V  [jvm.dll+0x3c22bf]
+V  [jvm.dll+0x3cbb4c]
+V  [jvm.dll+0x3cb56d]
+V  [jvm.dll+0x3b08cc]
+V  [jvm.dll+0x3b1fbc]
+V  [jvm.dll+0x10b1fe]
+V  [jvm.dll+0x10c624]
+V  [jvm.dll+0x21aac7]
+V  [jvm.dll+0x2494e7]
+V  [jvm.dll+0x172a76]
+C  [java.exe+0x2312]
+C  [java.exe+0x15f54]
+C  [KERNEL32.DLL+0x154e0]
+C  [ntdll.dll+0x485b]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000001f3e1f34800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=12024, stack(0x000000cc94600000,0x000000cc94700000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000001f3e1f31fe0] Heap_lock - owner thread: 0x000001f3e1f34800
+
+heap address: 0x00000000c0000000, size: 1024 MB, Compressed Oops mode: Non-zero based:0x00000000bffff000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff67f260000 - 0x00007ff67f2a7000 	C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe
+0x00007ffe23980000 - 0x00007ffe23b87000 	C:\windows\SYSTEM32\ntdll.dll
+0x00007ffe229b0000 - 0x00007ffe22a6d000 	C:\windows\System32\KERNEL32.DLL
+0x00007ffe213f0000 - 0x00007ffe21764000 	C:\windows\System32\KERNELBASE.dll
+0x00007ffe23510000 - 0x00007ffe235bc000 	C:\windows\System32\ADVAPI32.dll
+0x00007ffe22ba0000 - 0x00007ffe22c43000 	C:\windows\System32\msvcrt.dll
+0x00007ffe22d20000 - 0x00007ffe22dbd000 	C:\windows\System32\sechost.dll
+0x00007ffe21d70000 - 0x00007ffe21e91000 	C:\windows\System32\RPCRT4.dll
+0x00007ffe22ff0000 - 0x00007ffe2319c000 	C:\windows\System32\USER32.dll
+0x00007ffe20e60000 - 0x00007ffe20e86000 	C:\windows\System32\win32u.dll
+0x00007ffe21ea0000 - 0x00007ffe21ec9000 	C:\windows\System32\GDI32.dll
+0x00007ffe21080000 - 0x00007ffe21192000 	C:\windows\System32\gdi32full.dll
+0x00007ffe21770000 - 0x00007ffe2180d000 	C:\windows\System32\msvcp_win.dll
+0x00007ffe211a0000 - 0x00007ffe212b1000 	C:\windows\System32\ucrtbase.dll
+0x00007ffe0f420000 - 0x00007ffe0f6c5000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22000.120_none_9d947278b86cc467\COMCTL32.dll
+0x00007ffe22a70000 - 0x00007ffe22aa1000 	C:\windows\System32\IMM32.DLL
+0x00007ffe188e0000 - 0x00007ffe188f5000 	C:\Program Files\Java\jre1.8.0_271\bin\vcruntime140.dll
+0x00007ffdf4fb0000 - 0x00007ffdf504b000 	C:\Program Files\Java\jre1.8.0_271\bin\msvcp140.dll
+0x000000006e400000 - 0x000000006ec6f000 	C:\Program Files\Java\jre1.8.0_271\bin\server\jvm.dll
+0x00007ffe21ed0000 - 0x00007ffe21ed8000 	C:\windows\System32\PSAPI.DLL
+0x00007ffe14cb0000 - 0x00007ffe14cba000 	C:\windows\SYSTEM32\VERSION.dll
+0x00007ffe1ae40000 - 0x00007ffe1ae49000 	C:\windows\SYSTEM32\WSOCK32.dll
+0x00007ffe1a880000 - 0x00007ffe1a8b3000 	C:\windows\SYSTEM32\WINMM.dll
+0x00007ffe22dc0000 - 0x00007ffe22e2f000 	C:\windows\System32\WS2_32.dll
+0x00007ffe20080000 - 0x00007ffe20098000 	C:\windows\SYSTEM32\kernel.appcore.dll
+0x00007ffe1c820000 - 0x00007ffe1c830000 	C:\Program Files\Java\jre1.8.0_271\bin\verify.dll
+0x00007ffe0ff40000 - 0x00007ffe0ff6b000 	C:\Program Files\Java\jre1.8.0_271\bin\java.dll
+0x00007ffe188c0000 - 0x00007ffe188d8000 	C:\Program Files\Java\jre1.8.0_271\bin\zip.dll
+0x00007ffe1e9f0000 - 0x00007ffe1ec11000 	C:\windows\SYSTEM32\dbghelp.dll
+0x00007ffe20e90000 - 0x00007ffe20f10000 	C:\windows\System32\bcryptPrimitives.dll
+
+VM Arguments:
+jvm_args: -XX:+HeapDumpOnOutOfMemoryError -Xms1024m -Xmx1024m -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:G1ReservePercent=20 -Djava.security.egd=file:/dev/urandom -Duser.language=en -Duser.region=EN 
+java_command: ApacheJMeter.jar
+java_class_path (initial): ApacheJMeter.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;D:\program files\apache-jmeter-5.4\bin;D:\program files\Micro Focus\LoadRunner\bin\Silk\Silk Performer 21.0;C:\Users\Administrator\Downloads\apache-maven-3.8.5-bin\apache-maven-3.8.5\bin;C:\Program Files\Java\jre1.8.0_271\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37;D:\program files\apache-maven-3.8.5\bin;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;C:\Users\Administrator\AppData\Local\Programs\Fiddler;D:\program files\Microsoft VS Code\bin;D:\program files\PyCharm Community Edition 2022.1.1\bin;;D:\program files\IntelliJ IDEA Community Edition 2022.1.2\bin;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 22000 (10.0.22000.120)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 142 stepping 12, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 16361404k(3085528k free), swap 31827256k(959236k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.271-b09) for windows-amd64 JRE (1.8.0_271-b09), built on Sep 16 2020 19:14:59 by "" with MS VC++ 15.9 (VS2017)
+
+time: Mon Jun 20 16:26:48 2022
+timezone: 中国标准时间
+elapsed time: 0.025383 seconds (0d 0h 0m 0s)
+
