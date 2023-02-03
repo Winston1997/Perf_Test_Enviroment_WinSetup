@@ -16,3 +16,12 @@
 ![03](https://github.com/Winston1997/Perf_Test_Enviroment_WinSetup/blob/master/IMG/03.png)</br>
 4. 验证Grafana安装:访问http://127.0.0.1:3000 默认登录账号和密码：admin/11111</br>
 ![04](https://github.com/Winston1997/Perf_Test_Enviroment_WinSetup/blob/master/IMG/04.png)</br>
+5. 验证Telegraf安装（这个是用来监控压测性能的）</br>
+![06](https://github.com/Winston1997/Perf_Test_Enviroment_WinSetup/blob/master/IMG/06.png)</br>
+![07](https://github.com/Winston1997/Perf_Test_Enviroment_WinSetup/blob/master/IMG/07.png)</br>
+能监控到本机数据则表明压测环境安装配置没有问题。
+>注意：安装脚本执行完成后，请不要移动此文件夹的位置，否则通过环境变量创建的jmeter和java将会获取不到导致无法启动压测工具。
+
+### **卸载**
+1. 运行uninstall.bat脚本</br>
+![08](https://github.com/Winston1997/Perf_Test_Enviroment_WinSetup/blob/master/IMG/08.png)</br>
