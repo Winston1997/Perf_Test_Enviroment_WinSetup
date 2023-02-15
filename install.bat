@@ -208,10 +208,11 @@ del/f/s/q influxdb-1.7.3_windows_amd64.zip
 del/f/s/q telegraf_install_for_windows.zip
 echo.
 echo.
-echo.
+echo 本地Grafana平台请访问：http://127.0.0.1:3000 登录账号：admin 初始密码：11111
+echo 请通过命令行键入：jmeter 或从当前目录下jmeter的bin目录启动jmeter
 echo ****************************************************
 echo ******************压测环境配置完成******************
-echo ***************GOOD BYE!╰(*°▽°*)╯**************
+echo *请不要擅自移动此文件夹的位置哦！GOOD BYE!╰(*°▽°*)╯*
 echo ****************************************************
 
 pause
